@@ -7,10 +7,10 @@ const Cards = (props) => {
         <div className="col-deck">
             <div className="col">
                 <div className="card">
-                    <img src={props.image} className="card-img-top" alt=""></img>
+                    <img src={props.image} className="card-img-top" style={{height: '200px' , objectFit:'cover'}} alt=""></img>
                     <div className="card-body">
                         <h5 className="card-title text-center">{props.title}</h5>
-                        <p className="card-text">{props.description}</p>
+                        <p className="card-text overflow-auto" style={{height: '150px'}}>{props.description}</p>
                     </div>
                     <div className="card-footer bg-secondary text-center">
                         <a href={props.btnUrl} target="blank" className="btn btn-success">Más sobre {props.title}</a>
